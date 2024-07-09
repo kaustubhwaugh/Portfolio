@@ -14,4 +14,7 @@
 <li>Smooth Transitions: Subtle animations to enhance the interactive experience.</li>
 <li>Accessibility Improvements: Ensuring the site is usable for a wider audience.</li>
 </ul>
+
+<h3>Future Changes</h3>
+<p>Curremtly I have implemented some animations to buttons and some text, over next some updates I'll be implementing animations to almost every component of the webpage</p>
 <p>Thank you for visiting, and I hope you enjoy the new look and feel of my portfolio. Your feedback is always welcome!</p>
