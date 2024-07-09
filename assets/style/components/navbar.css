@@ -1,0 +1,60 @@
+.header{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.logo a {
+    font-size: 35px;
+    color: var(--navtcolor);
+}
+.navbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navlist{
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: var(--navtcolor);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    transition: color 0.4s;
+}
+
+#navlist a:hover {
+    color: grey;
+}
+
+
+/* xs */
+/* @media (min-width: 475px) { } */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {
+    
+} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

@@ -1,246 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Kaustubh Wagh</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaustubh Wagh</title>
+    <link rel="stylesheet" href="./assets/style/modern-normalize.css">
+    <link rel="stylesheet" href="./assets/style/styles.css">
+    <link rel="stylesheet" href="./assets/style/components/navbar.css">
+    <link rel="stylesheet" href="./assets/style/components/hero.css">
+    <link rel="stylesheet" href="./assets/style/components/skills.css">
+    <link rel="stylesheet" href="./assets/style/components/about.css">
+    <link rel="stylesheet" href="./assets/style/components/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="is-preload">
-	<!-- Nav Bar -->
-	<section>
-		<nav>
-			<ul>
-			  <li>
-				<a href="#">Home</a>
-			  </li>
-			  <li>
-				<a href="#">About</a>
-			  </li>
-			  <li>
-				<a href="#">Services</a>
-			  </li>
-			  <li>
-				<a href="#">Contact</a>
-			  </li>
-			</ul>
-		  </nav>
-	</section>
-	<section>
-		<div class="hero" id="home">
-			<div class="container-fluid"">
-				<div class="row align-items-center">
-					<div class="col-sm-12 col-md-6">
-						<div class="hero-content">
-							<div class="hero-text">
-								<p>I'm</p>
-								<h1>Kaustubh Wagh</h1>
-								<h2></h2>
-								<div class="typed-text">Web Developer</div>
-							</div>
-							<div class="hero-btn">
-								<a class="btn" href="https://www.linkedin.com/in/kaustubhwagh/" target="_blank">LinkedIn</a>
-								<a class="btn" href="https://github.com/kaustubhwaugh" target="_blank">Github</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 d-none d-md-block">
-						<div class="hero-image">
-							<img src="./images/me.jpg" alt="Hero Image" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<body>
+    <!-- Navbar -->
+    <section class="header container">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <a href="#">Kaustubh Wagh</a>
+                </div>
+                <ul id="navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar -->
+    <!-- Hero -->
+    <section class="home container" id="home">
+        <div class="home-content">
+            <h3>Hi i'm,</h3>
+            <h1>Kaustubh Wagh</h1>
+            <h3>I'm a <span>Web Developer</span></h3>
+            <div class="hero-btn">
+                <a class="btn" href="https://www.linkedin.com/in/kaustubhwagh/" target="_blank">LinkedIn</a>
+                <a class="btn" href="https://github.com/kaustubhwaugh" target="_blank">Github</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="./assets/images/me.jpg" alt="">
+        </div>
+    </section>
+    <!-- Hero -->
 
-	<!-- Wrapper-->
-	<div id="wrapper">
-		<!-- Nav -->
-		<nav id="nav">
-			<a href="#home" class="icon solid fa-home"><span>Home</span></a>
-			<a href="#work" class="icon solid fa-folder"><span>Skills</span></a>
-			<a href="#projects" class="icon solid fa-file-code"><span>Projects</span></a>
-			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-			<a href="./assets/Resume.pdf" class="icon solid fa-user"><span>Resume</span></a>
-		</nav>
+    <!-- About Section -->
+    <section class="about container" id="about">
+        <div class="about-content">
+            <div class="about-left">
+                <h2>About Me</h2>
+                <p>I am a Computer Engineering student with a passion for coding and development. I have a good grasp of
+                    HTML, CSS, and Python languages and a drive to learn new technologies. </p>
+                <p>I possess a keen interest in Cloud Computing, Artificial Intelligence, and Machine Learning. I am
+                    eager to apply my skills and passion to real-world projects with a focus on continuous learning.</p>
+            </div>
+            <div class="about-right">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>B.Tech Computer Engineering</h3>
+                            <p>2021-25</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>HSC</h3>
+                            <p>2019-21</p>
+                        </div>
+                    </div>
+                    <!-- Add more timeline items as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
 
-		<!-- Main -->
-		<div id="main">
-			<!-- Me -->
-			<article id="home" class="panel intro">
-				<header>
-					<h1>Kaustubh Wagh</h1>
-					<p>I am a Computer Engineering student with a passion for coding and development. I have a good grasp of HTML, CSS, and Python languages and a drive to learn new technologies. I possess a keen interest in Cloud Computing, Artificial Intelligence, and Machine Learning. I am eager to apply my skills and passion to real-world projects with a focus on continuous learning.</p>
-				</header>
-				
-			</article>
+    <!-- Skills -->
 
-			<!-- Work -->
-			<article id="work" class="panel" style="height: 30em;">
-				<header>
-					<h2>Skills</h2>
-				</header>
-				<ul class="skills__list">
-					<li class="skills__list-item btn btn--plain">HTML</li>
-					<li class="skills__list-item btn btn--plain">CSS</li>
-					<li class="skills__list-item btn btn--plain">SCSS</li>
-					<li class="skills__list-item btn btn--plain">JavaScript</li>
-					<li class="skills__list-item btn btn--plain">TypeScript</li>
-					<li class="skills__list-item btn btn--plain">C++</li>
-					<li class="skills__list-item btn btn--plain">Python</li>
-				  </ul>
-				</section>
-			</article>
+    <section class="skills-section container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Frontend</h3>
+                    <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="progress-bar">
+                            <div class="progress" data-level="Advanced"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="progress-bar">
+                            <div class="progress" data-level="Advanced"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="progress-bar">
+                            <div class="progress" data-level="Intermediate"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3>Backend</h3>
+                    <div class="skill">
+                        <div class="skill-name">Node.js</div>
+                        <div class="progress-bar">
+                            <div class="progress" data-level="Intermediate"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">PostgreSQL</div>
+                        <div class="progress-bar">
+                            <div class="progress" data-level="Intermediate"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3>Programming Languages</h3>
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="progress-bar">
+                            <div class="progress" data-level="Intermediate"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">C++</div>
+                        <div class="progress-bar">
+                            <div class="progress" data-level="Intermediate"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-			<article id="projects" class="panel">
-				<section id="projects" class="section projects">
-					<h2 class="section__title">Projects</h2>
-			
-					<div class="projects__grid" style="color: #cdcdcd;">
-					  <div class="project">
-						<h3>Project 1</h3>
-						<p class="project__description">
-						  Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-						  sapiente debitis labore sed ipsam Mollitia repellat illum quod
-						  unde beatae Quis
-						</p>
-						<ul class="project__stack">
-						  <li class="project__stack-item">HTML</li>
-						  <li class="project__stack-item">CSS</li>
-						  <li class="project__stack-item">JavaScipt</li>
-						</ul>
-			
-						<a
-						  href="https://github.com"
-						  aria-label="source code"
-						  class="link link--icon"
-						>
-						  <i aria-hidden="true" class="fab fa-github"></i>
-						</a>
-						<a
-						  href="https://example.com"
-						  aria-label="live preview"
-						  class="link link--icon"
-						>
-						  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-						</a>
-					  </div>
-			
-					  <div class="project">
-						<h3>Project 2</h3>
-						<p class="project__description">
-						  Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-						  sapiente debitis labore sed ipsam Mollitia repellat illum quod
-						  unde beatae Quis
-						</p>
-						<ul class="project__stack">
-						  <li class="project__stack-item">HTML</li>
-						  <li class="project__stack-item">CSS</li>
-						  <li class="project__stack-item">JavaScript</li>
-						</ul>
-			
-						<a
-						  href="https://github.com"
-						  aria-label="source code"
-						  class="link link--icon"
-						>
-						  <i aria-hidden="true" class="fab fa-github"></i>
-						</a>
-						<a
-						  href="https://example.com"
-						  aria-label="live preview"
-						  class="link link--icon"
-						>
-						  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-						</a>
-					  </div>
-			
-					  <div class="project">
-						<h3>Project 3</h3>
-						<p class="project__description">
-						  Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-						  sapiente debitis labore sed ipsam Mollitia repellat illum quod
-						  unde beatae Quis
-						</p>
-						<ul class="project__stack">
-						  <li class="project__stack-item">HTML</li>
-						  <li class="project__stack-item">CSS</li>
-						  <li class="project__stack-item">JavaScript</li>
-						</ul>
-			
-						<a
-						  href="https://github.com"
-						  aria-label="source code"
-						  class="link link--icon"
-						>
-						  <i aria-hidden="true" class="fab fa-github"></i>
-						</a>
-						<a
-						  href="https://example.com"
-						  aria-label="live preview"
-						  class="link link--icon"
-						>
-						  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-						</a>
-					  </div>
-					</div>
-				  </section>
-			</article>
+    <!-- Projects Section -->
+    <section class="projects-section container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+          <div class="pcard">
+            <div class="pcard-icons">
+              <i class="fas fa-file"></i>
+              <i class="fab fa-github"></i>
+            </div>
+            <h3 class="pcard-title">Project Name</h3>
+            <p class="pcard-description">This is a small description of the project.</p>
+            <div class="pcard-technologies">
+              <span class="tech-label">HTML</span>
+              <span class="tech-label">CSS</span>
+              <span class="tech-label">JavaScript</span>
+            </div>
+          </div>
 
-			<!-- Contact -->
-			<article id="contact" class="panel">
-				<header>
-					<h2>Contact Me</h2>
-				</header>
-				<form action="#" method="post">
-					<div>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-medium">
-								<input type="text" name="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<input type="text" name="subject" placeholder="Subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<input type="submit" value="Send Message" />
-							</div>
-						</div>
-					</div>
-				</form>
-			</article>
-		</div>
+          <div class="pcard">
+            <div class="pcard-icons">
+              <i class="fas fa-file"></i>
+              <i class="fab fa-github"></i>
+            </div>
+            <h3 class="pcard-title">Project Name</h3>
+            <p class="pcard-description">This is a small description of the project.</p>
+            <div class="pcard-technologies">
+              <span class="tech-label">HTML</span>
+              <span class="tech-label">CSS</span>
+              <span class="tech-label">JavaScript</span>
+            </div>
+          </div>
 
-		<!-- Footer -->
-		<div id="footer">
-			<ul class="copyright">
-				<li>&copy; kaustubhwaugh</li>
-			</ul>
-		</div>
-	</div>
+          <div class="pcard">
+            <div class="pcard-icons">
+              <i class="fas fa-file"></i>
+              <i class="fab fa-github"></i>
+            </div>
+            <h3 class="pcard-title">Project Name</h3>
+            <p class="pcard-description">This is a small description of the project.</p>
+            <div class="pcard-technologies">
+              <span class="tech-label">HTML</span>
+              <span class="tech-label">CSS</span>
+              <span class="tech-label">JavaScript</span>
+            </div>
+          </div>
 
-	<!-- Scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/typed.js"></script>
-	<script src="assets/js/main.js"></script>
+          <div class="pcard">
+            <div class="pcard-icons">
+              <i class="fas fa-file"></i>
+              <i class="fab fa-github"></i>
+            </div>
+            <h3 class="pcard-title">Project Name</h3>
+            <p class="pcard-description">This is a small description of the project.</p>
+            <div class="pcard-technologies">
+              <span class="tech-label">HTML</span>
+              <span class="tech-label">CSS</span>
+              <span class="tech-label">JavaScript</span>
+            </div>
+          </div>
+          <!-- Repeat the pcard div for each project -->
+        </div>
+      </section>
+    <!-- Projects Section -->
+
+    <script src="./assets/main.js"></script>
+    <script src="./assets/app.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>

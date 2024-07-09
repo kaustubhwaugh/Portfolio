@@ -1,0 +1,83 @@
+/* About Section */
+.about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4rem;
+    color: white;
+    text-align: center; /* Center content */
+    height: 50vh;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center align on larger screens */
+}
+
+.about-left, .about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    text-align: left; /* Align text to the left */
+}
+
+.about-left h2, .about-right h2 {
+    font-size: var(--size-3xl);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center; /* Center heading text */
+    color: #fff;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    text-align: left; /* Align timeline items text to the left */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5rem;
+    height: 100%;
+    background-color: aqua; /* Adjust color as needed */
+}
+
+.timeline-content {
+    padding-left: 2rem;
+    text-align: justify; /* Justify text within timeline content */
+}
+
+.timeline-content h3 {
+    font-size: var(--size-lg);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .about-content {
+        gap: 2rem;
+    }
+
+    .about-left, .about-right {
+        width: 100%;
+    }
+}
