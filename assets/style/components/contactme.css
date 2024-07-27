@@ -1,0 +1,139 @@
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    padding: 4rem;
+    color: white;
+    /* background-color: #1e1e1e; Background color to match theme */
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between; /* Space out the left and right sections */
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center align on larger screens */
+}
+
+.contact-left, .contact-right {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 0 1rem; /* Add horizontal margins for spacing */
+}
+
+.contact-left {
+    max-width: 600px; /* Adjust max-width as needed */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Allow form to stretch to container width */
+    width: 100%;
+}
+
+.contact-form input[type="email"], .contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow vertical resize */
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: rgb(247, 0, 123);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 20%;
+    transition: .5s ease;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact-form button[type="submit"]:hover {
+    background: blue;
+    transition: 1s;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the start (left) */
+}
+
+.contact-left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact-right h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact-right a {
+    color: #00fff2; /* Match button color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem;
+}
+
+.contact-right a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        margin: 0; /* Remove margins for stacked layout */
+        margin-bottom: 2rem; /* Add margin for spacing */
+    }
+
+    .contact-form {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.social-icons-container {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px; /* Set width of icons */
+    height: 40px; /* Set height of icons */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.social-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff; /* Change fill color if needed */
+    transition: fill 0.3s ease;
+}
+
+.social-icon:hover svg {
+    fill: #00fff2; /* Change color on hover if needed */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Pop-out effect on hover */
+}

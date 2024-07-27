@@ -9,11 +9,6 @@ section {
     padding: 2rem;
 }
 
-.skills-section h2 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .skills-container {
     display: flex;

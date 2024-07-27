@@ -38,6 +38,22 @@ svg {
     user-select: none;
 }
 
+.footer{
+    text-align: center;
+    font-style: oblique;
+    color: rgba(224, 224, 224, 0.801);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: #aaaaaa42;
+    margin: 5px;
+  }
+
 /* Media Queries */
 .container {
     width: 100%;
@@ -94,3 +110,4 @@ svg {
 }
 
 /* Media Queries */
+
